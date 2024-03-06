@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>registation</title>
+</head>
+
+
+    <div id="header">
+        <!-- Здесь будет отображено содержимое внешнего HTML файла -->
+    </div>
+
+    <script>
+        // Используем Fetch API для загрузки внешнего HTML файла
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                // Вставляем содержимое внешнего HTML файла в элемент с id="external-content"
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching external HTML:', error));
+    </script>
+    <div class="name_shop_card">REGISTRATION</div>
+
+    <div class="login_details">
+        <h2 class="text_title">Your Name</span>
+            <form action="" method="post" class="log_form">
+                <label for="name"></label>
+                <input type="name" id="email" name="email" placeholder="First name" required>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Last name" required>
+            </form>
+    </div>
+    <div class="checkboxs">
+        <input class="checrboxs" type="radio" value="MAle" name="chb1"><span class="checkbox_text"> Male</span>
+        <input class="checrboxs" type="radio" value="Female" name="chb1"><span class="checkbox_text"> Female</span>
+        <input class="checrboxs" type="radio" value="Other" name="chb1"><span class="checkbox_text">Other</span>
+
+    </div>
+
+    <div class="login_details">
+        <h2 class="text_title">Login details
+</>
+<form action="" method="post" class="log_form">
+    <label for="email"></label>
+    <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+    <label for="password"></label>
+    <input type="password" id="password" name="password" placeholder="Your password.." required>
+
+    <span class="text_form">Please use 8 or more characters, with at least 1 number and a mixture of
+        uppercase
+        and
+        lowercase letters</span>
+    <input type="submit" class="inpt_btn" value="JOIN NOW">
+</form>
+</div>
+
+<div class="check_bonus">
+    <h2 class="text_title">LOYALTY HAS ITS PERKS</h2>
+    <span> Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as
+        soon as you join:</span>
+
+
+    <span class="check_li"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
+            fill="none">
+            <path
+                d="M20.0273 0.536728H18.2948C18.0519 0.536728 17.8214 0.649819 17.6727 0.84333L7.45348 13.9694L2.55333 7.67402C2.47921 7.57859 2.38472 7.50143 2.27697 7.44833C2.16923 7.39523 2.05101 7.36756 1.93121 7.36742H0.198687C0.0326225 7.36742 -0.0590849 7.56093 0.0425367 7.69161L6.83136 16.4122C7.14862 16.8193 7.75835 16.8193 8.07808 16.4122L20.1835 0.858409C20.2851 0.730239 20.1934 0.536728 20.0273 0.536728Z"
+                fill="black" />
+        </svg> 15% off welcome offer</span>
+    <span class="check_li"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
+            fill="none">
+            <path
+                d="M20.0273 0.536728H18.2948C18.0519 0.536728 17.8214 0.649819 17.6727 0.84333L7.45348 13.9694L2.55333 7.67402C2.47921 7.57859 2.38472 7.50143 2.27697 7.44833C2.16923 7.39523 2.05101 7.36756 1.93121 7.36742H0.198687C0.0326225 7.36742 -0.0590849 7.56093 0.0425367 7.69161L6.83136 16.4122C7.14862 16.8193 7.75835 16.8193 8.07808 16.4122L20.1835 0.858409C20.2851 0.730239 20.1934 0.536728 20.0273 0.536728Z"
+                fill="black" />
+        </svg> Free shipping, returns and exchanges on all orders</span>
+    <span class="check_li"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
+            fill="none">
+            <path
+                d="M20.0273 0.536728H18.2948C18.0519 0.536728 17.8214 0.649819 17.6727 0.84333L7.45348 13.9694L2.55333 7.67402C2.47921 7.57859 2.38472 7.50143 2.27697 7.44833C2.16923 7.39523 2.05101 7.36756 1.93121 7.36742H0.198687C0.0326225 7.36742 -0.0590849 7.56093 0.0425367 7.69161L6.83136 16.4122C7.14862 16.8193 7.75835 16.8193 8.07808 16.4122L20.1835 0.858409C20.2851 0.730239 20.1934 0.536728 20.0273 0.536728Z"
+                fill="black" />
+        </svg> $10 off a purchase on your birthday</span>
+    <span class="check_li"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
+            fill="none">
+            <path
+                d="M20.0273 0.536728H18.2948C18.0519 0.536728 17.8214 0.649819 17.6727 0.84333L7.45348 13.9694L2.55333 7.67402C2.47921 7.57859 2.38472 7.50143 2.27697 7.44833C2.16923 7.39523 2.05101 7.36756 1.93121 7.36742H0.198687C0.0326225 7.36742 -0.0590849 7.56093 0.0425367 7.69161L6.83136 16.4122C7.14862 16.8193 7.75835 16.8193 8.07808 16.4122L20.1835 0.858409C20.2851 0.730239 20.1934 0.536728 20.0273 0.536728Z"
+                fill="black" />
+        </svg> Early access to products</span>
+    <span class="check_li"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
+            fill="none">
+            <path
+                d="M20.0273 0.536728H18.2948C18.0519 0.536728 17.8214 0.649819 17.6727 0.84333L7.45348 13.9694L2.55333 7.67402C2.47921 7.57859 2.38472 7.50143 2.27697 7.44833C2.16923 7.39523 2.05101 7.36756 1.93121 7.36742H0.198687C0.0326225 7.36742 -0.0590849 7.56093 0.0425367 7.69161L6.83136 16.4122C7.14862 16.8193 7.75835 16.8193 8.07808 16.4122L20.1835 0.858409C20.2851 0.730239 20.1934 0.536728 20.0273 0.536728Z"
+                fill="black" />
+        </svg> Exclusive offers & rewards</span>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div id="external-content">
+    <!-- Здесь будет отображено содержимое внешнего HTML файла -->
+</div>
+<script>
+    // Используем Fetch API для загрузки внешнего HTML файла
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            // Вставляем содержимое внешнего HTML файла в элемент с id="external-content"
+            document.getElementById('external-content').innerHTML = data;
+        })
+        .catch(error => console.error('Error fetching external HTML:', error));
+</script>
+
+</body>
+
+</html>

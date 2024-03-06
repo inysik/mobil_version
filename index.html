@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- <link rel="import" href="./header.html"> -->
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="header">
+        <!-- Здесь будет отображено содержимое внешнего HTML файла -->
+    </div>
+
+    <script>
+        // Используем Fetch API для загрузки внешнего HTML файла
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                // Вставляем содержимое внешнего HTML файла в элемент с id="external-content"
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching external HTML:', error));
+    </script>
+
+    <div class="shop_card">
+        <h1 class="name_shop_card">SHOPPING CART</h1>
+    </div>
+    <div class="card">
+        <img src="./img/img_prod.png" alt="img_product" width="143px" height="188px">
+        <div class="card_content">
+            <div class="name_product">
+                <h3 class="name_prod">MANGO PEOPLE T-SHIRT</h3>
+                <span class="price_prod">Price: $300</span>
+                <span class="color_prod">Color: Red</span>
+                <span class="size_prod">Size: Xl</span>
+                <span class="quantity_prod">Quantity:2</span>
+
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="close"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12"
+                    fill="none">
+                    <path
+                        d="M6.21133 5.73193L9.66221 1.87065C9.82599 1.68772 9.91811 1.43948 9.91832 1.18055C9.91852 0.921615 9.82679 0.673196 9.6633 0.489941C9.49981 0.306686 9.27796 0.203606 9.04655 0.203377C8.81513 0.203148 8.59312 0.30579 8.42934 0.488722L4.97846 4.35L1.52758 0.488722C1.3638 0.305467 1.14167 0.202515 0.910056 0.202515C0.678439 0.202515 0.456309 0.305467 0.292531 0.488722C0.128753 0.671977 0.0367432 0.920525 0.0367432 1.17969C0.0367432 1.43885 0.128753 1.6874 0.292531 1.87065L3.74341 5.73193L0.292531 9.5932C0.128753 9.77646 0.0367432 10.025 0.0367432 10.2842C0.0367432 10.5433 0.128753 10.7919 0.292531 10.9751C0.456309 11.1584 0.678439 11.2613 0.910056 11.2613C1.14167 11.2613 1.3638 11.1584 1.52758 10.9751L4.97846 7.11386L8.42934 10.9751C8.59312 11.1584 8.81525 11.2613 9.04687 11.2613C9.27848 11.2613 9.50061 11.1584 9.66439 10.9751C9.82817 10.7919 9.92018 10.5433 9.92018 10.2842C9.92018 10.025 9.82817 9.77646 9.66439 9.5932L6.21133 5.73193Z"
+                        fill="#575757" />
+                </svg></button>
+        </div>
+
+    </div>
+    <div class="card">
+        <img src="./img/img_prod.png" alt="img_product" width="143px" height="188px">
+        <div class="card_content">
+            <div class="name_product">
+                <h3 class="name_prod">MANGO PEOPLE T-SHIRT</h3>
+                <span class="price_prod">Price: $300</span>
+                <span class="color_prod">Color: Red</span>
+                <span class="size_prod">Size: Xl</span>
+                <span class="quantity_prod">Quantity:2</span>
+
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="close"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12"
+                    fill="none">
+                    <path
+                        d="M6.21133 5.73193L9.66221 1.87065C9.82599 1.68772 9.91811 1.43948 9.91832 1.18055C9.91852 0.921615 9.82679 0.673196 9.6633 0.489941C9.49981 0.306686 9.27796 0.203606 9.04655 0.203377C8.81513 0.203148 8.59312 0.30579 8.42934 0.488722L4.97846 4.35L1.52758 0.488722C1.3638 0.305467 1.14167 0.202515 0.910056 0.202515C0.678439 0.202515 0.456309 0.305467 0.292531 0.488722C0.128753 0.671977 0.0367432 0.920525 0.0367432 1.17969C0.0367432 1.43885 0.128753 1.6874 0.292531 1.87065L3.74341 5.73193L0.292531 9.5932C0.128753 9.77646 0.0367432 10.025 0.0367432 10.2842C0.0367432 10.5433 0.128753 10.7919 0.292531 10.9751C0.456309 11.1584 0.678439 11.2613 0.910056 11.2613C1.14167 11.2613 1.3638 11.1584 1.52758 10.9751L4.97846 7.11386L8.42934 10.9751C8.59312 11.1584 8.81525 11.2613 9.04687 11.2613C9.27848 11.2613 9.50061 11.1584 9.66439 10.9751C9.82817 10.7919 9.92018 10.5433 9.92018 10.2842C9.92018 10.025 9.82817 9.77646 9.66439 9.5932L6.21133 5.73193Z"
+                        fill="#575757" />
+                </svg></button>
+        </div>
+
+    </div>
+    <div class="btn_option">
+        <button class="btn_bt">Go to cart copy</button>
+        <button class="btn_bt">Continue shopping</button>
+    </div>
+
+    <div class="ship_adress">
+        <h3 class="ship_adrs_name">SHIPPING ADRESS</h3>
+        <div class="inpt_adrs">
+            <input class="btn_bt bt_inpt" type="password" name="password" placeholder="Bangladesh">
+            <input class="btn_bt bt_inpt" type="password" name="password" placeholder="State">
+            <input class="btn_bt bt_inpt" type="password" name="password" placeholder="Postcode / Zip">
+        </div>
+        <button class="btn_bt" type="submit">Get a quote</button>
+    </div>
+
+    <div class="cheque">
+        <h3 class="sub_total ">SUB TOTAL $900</h3>
+        <h4 class="ship_adrs_name ">GRAND TOTAL $900</h4>
+        <hr>
+        <button class="cheque_prise  " type="submit">PROCEED TO CHECKOUT</button>
+
+    </div>
+
+
+   
+    <div id="external-content">
+        <!-- Здесь будет отображено содержимое внешнего HTML файла -->
+    </div>  <script>
+        // Используем Fetch API для загрузки внешнего HTML файла
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                // Вставляем содержимое внешнего HTML файла в элемент с id="external-content"
+                document.getElementById('external-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching external HTML:', error));
+    </script>
+    <!-- <iframe src="./footer.html" width="100%" height="100%"></iframe> -->
+    
+</body>
+
+</html>
